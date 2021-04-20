@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Editor = () => {
+    const [text, setText] = useState('');
+    
+    const handleChange = (event) => {
+        setText(event.target.value);
+    }
+    console.log(text);
+
     return (
-        <div>
-            
+        <div id="editor">
+            <textarea value={text} onChange={handleChange}></textarea> 
         </div>
     )
 }
