@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { useDispatch } from 'react-redux';
 
 const Editor = () => {
-    const [text, setText] = useState('');
+    const dispatch = useDispatch();
     
-    const handleChange = (event) => {
+    const handleChange = (event)  => {
         setText(event.target.value);
     }
     console.log(text);
@@ -15,4 +16,4 @@ const Editor = () => {
     )
 }
 
-export default Editor
+export default Editor;

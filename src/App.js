@@ -1,14 +1,17 @@
 import './App.css';
 import Editor from './Components/Editor';
 import Preview from './Components/Preview';
-
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
-    <div className="App">
-        <Editor />
-        <Preview />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+          <Editor />
+          <Preview />
+      </div>
+    </Provider>
   );
 }
 
