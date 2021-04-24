@@ -1,6 +1,6 @@
 import './App.css';
-import Editor from './Components/Editor';
-import Preview from './Components/Preview';
+import Editor from './components/Editor';
+import Preview from './components/Preview';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -12,8 +12,8 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-          <Editor />
-          <Preview />
+        <Editor />
+        <Preview />
       </div>
     </Provider>
   );

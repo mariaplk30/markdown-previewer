@@ -7,7 +7,7 @@ const Preview = () => {
 
     return (
         <div>
-            <h4>Texto: { text } </h4>
+            <h4> { text } </h4>
         </div>
     )
 }

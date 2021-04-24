@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import textReducer from './Reducers/textReducer';
+import textReducer from './reducers/textReducer';
 
 // Esto es para la extension redux devtools de chrome
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
@@ -10,7 +10,7 @@ const reducers = combineReducers({
 });
 
 
-// No sé para que estas usando thunk, eso es para procesos asincronos
+// Thunk -> eso es para procesos asincronos
 export const store = createStore(
     reducers,
     composeEnhancers(

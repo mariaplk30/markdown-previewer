@@ -1,8 +1,6 @@
-import {NEW_TEXT} from '../Actions/text'; 
+import {NEW_TEXT} from '../actions/text'; 
 
-const defaultText = 'Esto es el texto por defecto';
-
-export default function textReducer(state = defaultText, action){
+export default function textReducer(state = ' ', action){
     switch(action.type){
         case NEW_TEXT:
             return action.fullText;
