@@ -1,8 +1,25 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+body {
+  background-color: #deaaff;
   text-align: center;
+  font-family: "Crimson Text", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#editor {
+  margin: 2rem 0 2rem 0;
+  height: 20rem;
+  justify-content: center;
+  width: 60%;
+  padding: 10px;
+  background-color: #d0d1ff;
+  border: 0px;
+}
+
+.card {
+  margin: auto;
+  margin-bottom: 2rem;
+  justify-content: center;
+  width: 60%;
+  padding: 10px;
+  background-color: #d0d1ff;
 }

@@ -18,8 +18,8 @@ const Editor = () => {
     }, [ dispatch, texto ]);
 
     return (
-        <div id="editor">
-            <textarea value={ texto } name="texto" onChange={ handleInputChanget }></textarea> 
+        <div>
+            <textarea  id="editor" value={ texto } name="texto" onChange={ handleInputChanget }></textarea> 
         </div>
     )
 }
